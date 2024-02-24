@@ -15,3 +15,4 @@ gem "dotenv", "~> 3.0"
 
 gem "pry", "~> 0.14.2"
 
+gem "ruby-openai", "~> 6.3"
