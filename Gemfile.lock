@@ -25,7 +25,6 @@ GEM
       version_gem (~> 1.1)
     oauth-tty (1.0.5)
       version_gem (~> 1.1, >= 1.1.1)
-    openai (0.3.0)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -43,12 +42,12 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   dotenv (~> 3.0)
   json (~> 2.7)
   oauth (~> 1.1)
-  openai (~> 0.3.0)
   pry (~> 0.14.2)
   ruby-openai (~> 6.3)
   typhoeus (~> 1.4)
