@@ -43,8 +43,12 @@ else
 	"🚀 The following #{lang} repositories are trending this week: #{mention_list} \n"
 end
 
-text += repos.map do |repo|
-	"#{repo["repo_name"]} ↑#{repo["stars"]} ✨"
+text += repos.map.with_index do |repo, i|
+	if i == 0 
+	  "https://github.com/#{repo["repo_name"]} ↑#{repo["stars"]} 🌟"
+	else
+		"#{repo["repo_name"]} ↑#{repo["stars"]} 🌟"
+	end
 end.join("\n")
 
 puts text
