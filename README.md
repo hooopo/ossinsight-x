@@ -1,2 +1,3 @@
 # ossinsight-x
-Automated send trending repo to Twitter
+
+* https://twitter.com/OSSInsight/status/1761525916981723549
