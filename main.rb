@@ -45,9 +45,9 @@ end
 
 text += repos.map.with_index do |repo, i|
 	if i == 0 
-	  "https://github.com/#{repo["repo_name"]} ↑#{repo["stars"]} 🌟"
+	  "https://github.com/#{repo["repo_name"]} ↑#{repo["stars"]}"
 	else
-		"#{repo["repo_name"]} ↑#{repo["stars"]} 🌟"
+		"#{repo["repo_name"]} ↑#{repo["stars"]}"
 	end
 end.join("\n")
 
@@ -57,8 +57,8 @@ puts text
 resp = client.create(text)
 
 if resp.success?
-	puts "Tweet created!"
+  puts "Tweet created!"
 else
-	puts "Error: #{resp.code}"
+ raise resp.body 
 end
 
